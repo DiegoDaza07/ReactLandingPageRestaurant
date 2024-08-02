@@ -22,3 +22,29 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# dependencies
+/node_modules
+/dist
+/.pnp
+.pnp.js
+package-lock.json
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.prod
+.env.dev
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
