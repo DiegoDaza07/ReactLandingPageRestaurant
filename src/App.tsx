@@ -11,8 +11,8 @@ function App() {
   const Home = lazy(() => import('@/pages/home/home'));
   const Menu = lazy(() => import('@/pages/menu/menu'));
   const MenuFilter = lazy(() => import('@/pages/menuFilter/menuFilter'));
+  const Contact = lazy(() => import('@/pages/contact/contact'));
 
-  //Routes
   return (
     <React.StrictMode>
       <Suspense fallback={<Loading />}>
@@ -22,6 +22,7 @@ function App() {
               <Route path={`/home`} element={<Home />} />
               <Route path={`/menu`} element={<Menu />} />
               <Route path={`/menu/:categoryname`} element={<MenuFilter />} />
+              <Route path={`/contact`} element={<Contact />} />
               <Route path={`*`} element={<Navigate to="/home" replace />} />
             </Routes>
           </BrowserRouter>
