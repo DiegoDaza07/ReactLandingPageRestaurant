@@ -1,0 +1,18 @@
+.menu-filter-container {
+    width: 90%;
+    padding: 10% 5%;
+}
+
+.menu-filter-container h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu-meals-container {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    justify-items: center;
+}

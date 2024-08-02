@@ -9,6 +9,8 @@ function App() {
 
   //Routes
   const Home = lazy(() => import('@/pages/home/home'));
+  const Menu = lazy(() => import('@/pages/menu/menu'));
+  const MenuFilter = lazy(() => import('@/pages/menuFilter/menuFilter'));
 
   //Routes
   return (
@@ -18,6 +20,8 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path={`/home`} element={<Home />} />
+              <Route path={`/menu`} element={<Menu />} />
+              <Route path={`/menu/:categoryname`} element={<MenuFilter />} />
               <Route path={`*`} element={<Navigate to="/home" replace />} />
             </Routes>
           </BrowserRouter>
