@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MenuContainer from './MenuContainer';
 import logo from '@/assets/logo.jpeg';
-import './Navbar.css';
+import './navbar.css';
 
 const Navbar = () => {
 
