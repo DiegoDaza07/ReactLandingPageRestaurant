@@ -1,0 +1,63 @@
+.containerLoadingComponent{
+    background-color: #8f8f8fcf;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 85885;
+}
+
+.containerLoading-div{
+    background-color: #fff;
+    padding: 40px 16px;
+    border-radius: 50%;
+    box-shadow: 0 5px 8px 0 #8d8d8d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: borderAnimation 5s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+      border: 2px solid red;
+    }
+    25% {
+      border: 2px solid blue;
+    }
+    50% {
+      border: 2px solid green;
+    }
+    75% {
+      border: 2px solid yellow;
+    }
+    100% {
+      border: 2px solid red;
+    }
+  }
+
+.containerLoading-logo{
+    width: 100px;
+    animation: rotateAnimation 1.5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+      transform:  rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.containerLoading-h3{
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 2rem;
+}

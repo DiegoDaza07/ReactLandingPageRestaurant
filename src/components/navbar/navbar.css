@@ -1,0 +1,135 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 6%);
+    padding: 8px 3%;
+    height: 60px;
+    background: linear-gradient(to bottom, #07111A, rgba(0, 0, 0, 0));
+    display: grid;
+    grid-template-columns: 0.5fr minmax(250px, 3fr) 60px;
+    align-items: center;
+    justify-items: start;
+    z-index: 5;
+}
+
+.navbar-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.navbar-btn-login:hover {
+    color: #FFF;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.navbar-btn {
+    transition: all ease-in-out 0.3s;
+    color: #FFF;
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.navbar-btn-singup {
+    width: calc(100% - 28px);
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 14px;
+    gap: 10px;
+}
+
+.navbar-btn-singup:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.navbar-btn-login {
+    width: calc(100% - 28px);
+    border: 2px solid var(--secondary-color);
+    padding: 8px 14px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.navbar-btn-login:hover {
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.navbar-btn-menu {
+    display: none;
+}
+
+.navbar-btn-responsive {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar-btn-responsive {
+        display: flex;
+    }
+
+    .navbar-logo {
+        width: 40px;
+    }
+
+    .navbar-search {
+        width: calc(100% - 10px);
+        padding: 0px 10px 0px;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .navbar-btn-menu {
+        display: flex;
+    }
+
+    .navbar-contents {
+        transition: all ease-in-out 0.3s;
+        position: fixed;
+        right: -100vh;
+        background-color: #07111A;
+        width: max-content;
+        min-width: 250px;
+        top: 76px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 5;
+        border-left: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+    }
+}
+
+.navbar-contents-active {
+    right: 0;
+}
