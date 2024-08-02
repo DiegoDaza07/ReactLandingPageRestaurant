@@ -48,8 +48,8 @@ const Navbar = () => {
 
             <div className={`navbar-contents ${statusMenu ? 'navbar-contents-active' : ''}`}>
                 <Link className='navbar-btn' to={'/home'}>{'Inicio'}</Link>
-                <Link className='navbar-btn' to={'/Menu'}>{'Menu'}</Link>
-                <Link className='navbar-btn' to={'/Contact'}>{'Contacto'}</Link>
+                <Link className='navbar-btn' to={'/menu'}>{'Menu'}</Link>
+                <Link className='navbar-btn' to={'/contact'}>{'Contacto'}</Link>
             </div>
 
             <div className='navbar-btn-menu'>

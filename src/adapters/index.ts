@@ -1,1 +1,2 @@
-export * from './menu.adapter';
+export * from './categories.adaptes';
+export * from './meals.adapter';
